@@ -1,6 +1,6 @@
 # Use the Python 3 official image
 # https://hub.docker.com/_/python
-FROM python:3
+FROM python:3.12
 
 # Run in unbuffered mode
 ENV PYTHONUNBUFFERED=1
