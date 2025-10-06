@@ -9,10 +9,10 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 # Copy local code to the container image.
-COPY . ./
+COPY ./backend ./
 
 # Install project dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Run the web service on container startup.
-CMD ["gunicorn", "main:app"]
+CMD ["gunicorn", "app:app"]
