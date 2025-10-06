@@ -287,6 +287,10 @@ def get_planetas():
     
     return jsonify(lista_json)
 
+
+    @app.route('/ping', methods=['GET'])
+    def ping_pong():
+        return jsonify({"ping":"pong"})
 # Run Flask App
 if __name__ == '__main__':
     # Setting use_reloader=False prevents the app from running twice if debug=True
